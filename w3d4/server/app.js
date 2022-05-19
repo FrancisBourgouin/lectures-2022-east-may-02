@@ -37,7 +37,7 @@ const user1 = {
   id: 1,
   email: "periodic@table.com",
   name: "Dimitri Ivanovich Mendeleiv",
-  password: bcrypt.hashSync("hydrogen", salt),
+  password: bcrypt.hashSync(process.env.USER1_PASSWORD, salt),
   secret: "Actually prefer biology over chemistry",
 };
 
@@ -45,7 +45,7 @@ const user2 = {
   id: 2,
   email: "pontiac@bandit.com",
   name: "Doug Judy",
-  password: bcrypt.hashSync("rosa", salt),
+  password: bcrypt.hashSync(process.env.USER2_PASSWORD, salt),
   secret: "Doesn't like pontiacs",
 };
 
