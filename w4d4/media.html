@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Media Queries</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+    <style>
+      img {
+        width: 60%;
+        height: auto;
+      }
+      body {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1em;
+        background: #b0b;
+      }
+
+      article {
+        width: calc(50% - 0.5em);
+        display: flex;
+        align-items: center;
+        gap: 1em;
+      }
+      /* max-width, up to the size */
+      @media screen and (max-width: 1200px) {
+        article {
+          flex-direction: column;
+        }
+        img {
+          width: 100%;
+        }
+        body {
+          background: #bada55;
+        }
+      }
+
+      @media screen and (max-width: 800px) {
+        article {
+          width: 100%;
+        }
+        body {
+          background: #c0ffee;
+        }
+      }
+    </style>
+    <article>
+      <img src="images/20220131174506_1.jpg" alt="" />
+      <div>
+        <h1>Image title 1</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque laborum animi id,
+          doloribus veniam dolorum assumenda saepe obcaecati aperiam in officia tenetur
+          incidunt? Mollitia, fuga eaque nisi laborum veritatis ut!
+        </p>
+      </div>
+    </article>
+    <article>
+      <img src="images/20220131221341_1.jpg" alt="" />
+      <div>
+        <h1>Image title 2</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque laborum animi id,
+          doloribus veniam dolorum assumenda saepe obcaecati aperiam in officia tenetur
+          incidunt? Mollitia, fuga eaque nisi laborum veritatis ut!
+        </p>
+      </div>
+    </article>
+    <article>
+      <img src="images/20220201000857_1.jpg" alt="" />
+      <div>
+        <h1>Image title 3</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque laborum animi id,
+          doloribus veniam dolorum assumenda saepe obcaecati aperiam in officia tenetur
+          incidunt? Mollitia, fuga eaque nisi laborum veritatis ut!
+        </p>
+      </div>
+    </article>
+    <article>
+      <img src="images/20220202213814_1.jpg" alt="" />
+      <div>
+        <h1>Image title 4</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque laborum animi id,
+          doloribus veniam dolorum assumenda saepe obcaecati aperiam in officia tenetur
+          incidunt? Mollitia, fuga eaque nisi laborum veritatis ut!
+        </p>
+      </div>
+    </article>
+  </body>
+</html>

@@ -5,6 +5,7 @@ const cookieParser = require("cookie-parser");
 const cookieSession = require("cookie-session");
 const logger = require("morgan");
 const bcrypt = require("bcryptjs");
+const apiRoutes = require("./routes/apiRouter");
 
 const app = express();
 
@@ -54,6 +55,8 @@ const listOfUsers = {
   "pontiac@bandit.com": user2,
 };
 
+app.use("/api", apiRoutes);
+
 app.get("/", (req, res) => {
   console.log(listOfUsers);
   return res.render("index");
@@ -91,7 +94,7 @@ app.post("/login", (req, res) => {
 });
 
 app.get("/register", (req, res) => {
-  res.render("register");
+  return res.render("register");
 });
 
 app.get("/secret", (req, res) => {

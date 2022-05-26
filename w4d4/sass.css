@@ -1,0 +1,20 @@
+body {
+  background: #b0b;
+}
+
+p {
+  color: #333;
+}
+
+section.bloglist article {
+  background: white;
+  margin: 1em;
+}
+section.bloglist article h1 {
+  color: crimson;
+}
+section.bloglist article h1:hover {
+  background: #b0b;
+}
+
+/*# sourceMappingURL=sass.css.map */

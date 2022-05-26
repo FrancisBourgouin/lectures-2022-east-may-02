@@ -1,0 +1,31 @@
+$primary-bg-color: #b0b;
+
+body {
+  background: $primary-bg-color;
+}
+
+p {
+  color: #333;
+}
+// section.bloglist article {
+//   background: white;
+//   margin: 1em;
+// }
+
+// section.bloglist article h1 {
+//   color: crimson;
+// }
+
+section.bloglist {
+  article {
+    background: white;
+    margin: 1em;
+    h1 {
+      color: crimson;
+
+      &:hover {
+        background: $primary-bg-color;
+      }
+    }
+  }
+}
